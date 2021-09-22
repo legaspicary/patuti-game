@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'));
 })
 
+const url = process.env.APP_URL || 'http://localhost/';
+
 app.listen(port, () => {
-  console.log(`Patuti game listening at http://localhost:${port}`)
+  console.log(`Patuti game listening at ${url}${port}`)
 })
