@@ -8,7 +8,7 @@ kaboom({
 });
 
 //* CONSTANTS
-const ROOT_SPRITES = process.env.APP_URL || "http://localhost:3000/sprites/";
+const ROOT_SPRITES = window.location.href+"sprites/";
 const SPEED = 300;
 const MINIMUM_JUMP = 500;
 const MAXIMUM_JUMP = 1000;
